@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Loy-jU-4Jc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-uk-b5f">
+                                        <rect key="frame" x="28" y="88" width="319" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozb-Cm-UdH">
+                                        <rect key="frame" x="28" y="170" width="319" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmL-iw-gVS">
+                                        <rect key="frame" x="116" y="263" width="143" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="animation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V8W-DF-qqq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19971561290000001" green="0.71098619929999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YmL-iw-gVS" secondAttribute="trailing" constant="116" id="1Iz-kj-QP2"/>
+                                    <constraint firstItem="Bga-uk-b5f" firstAttribute="top" secondItem="Loy-jU-4Jc" secondAttribute="top" constant="88" id="AmB-Dd-Fy3"/>
+                                    <constraint firstItem="YmL-iw-gVS" firstAttribute="top" secondItem="ozb-Cm-UdH" secondAttribute="bottom" constant="63" id="CsH-aB-w1L"/>
+                                    <constraint firstItem="ozb-Cm-UdH" firstAttribute="top" secondItem="Bga-uk-b5f" secondAttribute="bottom" constant="52" id="HH0-Bd-uiE"/>
+                                    <constraint firstItem="Bga-uk-b5f" firstAttribute="leading" secondItem="Loy-jU-4Jc" secondAttribute="leading" constant="28" id="a0O-XB-eA2"/>
+                                    <constraint firstItem="YmL-iw-gVS" firstAttribute="leading" secondItem="Loy-jU-4Jc" secondAttribute="leading" constant="116" id="cfg-MG-bTK"/>
+                                    <constraint firstItem="ozb-Cm-UdH" firstAttribute="leading" secondItem="Loy-jU-4Jc" secondAttribute="leading" constant="28" id="dDS-Yb-LY3"/>
+                                    <constraint firstAttribute="trailing" secondItem="ozb-Cm-UdH" secondAttribute="trailing" constant="28" id="oiL-5w-bZS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bga-uk-b5f" secondAttribute="trailing" constant="28" id="tio-LP-OXs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Loy-jU-4Jc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2Pe-zy-oLL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Loy-jU-4Jc" secondAttribute="bottom" id="TxL-6K-2NQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Loy-jU-4Jc" secondAttribute="trailing" id="UPy-2a-ihf"/>
+                            <constraint firstItem="Loy-jU-4Jc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ar0-Gd-CRu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animatebtn" destination="YmL-iw-gVS" id="cpW-gA-XlJ"/>
+                        <outlet property="myView" destination="Loy-jU-4Jc" id="yGV-Jd-qZu"/>
+                        <outlet property="password" destination="ozb-Cm-UdH" id="vpH-hU-jDP"/>
+                        <outlet property="username" destination="Bga-uk-b5f" id="HlU-fF-sBk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
